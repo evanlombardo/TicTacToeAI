@@ -1,0 +1,23 @@
+table, p, button
+{
+    margin: auto;
+    font-size: 4vw;
+    text-align: center;
+}
+
+button
+{
+    width: 8vw;
+    height: 8vw;
+}
+
+.smaller
+{
+    font-size: 2vw;
+}
+
+.fit
+{
+    width: auto;
+    height: auto;
+}

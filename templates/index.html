@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block body %}
+{% endblock %}
+
+{% block board %}
+
+    <form action="/" method="post">
+
+        <tr>
+
+            <td><button {{ button[0][0] }} value="X" name="button[0][0]">{{ board[0][0] }}</button></td>
+            <td><button {{ button[0][1] }} value="X" name="button[0][1]">{{ board[0][1] }}</button></td>
+            <td><button {{ button[0][2] }} value="X" name="button[0][2]">{{ board[0][2] }}</button></td>
+
+        </tr>
+
+        <tr>
+
+            <td><button {{ button[1][0] }} value="X" name="button[1][0]">{{ board[1][0] }}</button></td>
+            <td><button {{ button[1][1] }} value="X" name="button[1][1]">{{ board[1][1] }}</button></td>
+            <td><button {{ button[1][2] }} value="X" name="button[1][2]">{{ board[1][2] }}</button></td>
+
+        </tr>
+
+        <tr>
+
+            <td><button {{ button[2][0] }} value="X" name="button[2][0]">{{ board[2][0] }}</button></td>
+            <td><button {{ button[2][1] }} value="X" name="button[2][1]">{{ board[2][1] }}</button></td>
+            <td><button {{ button[2][2] }} value="X" name="button[2][2]">{{ board[2][2] }}</button></td>
+
+        </tr>
+
+    </form>
+
+{% endblock %}
+
+{% block description %}
+
+    <p class="smaller">X is you, O is the AI</p>
+
+{% endblock %}

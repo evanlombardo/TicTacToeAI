@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <link href="/static/styles.css" rel="stylesheet">
+
+        <title>Tic Tac Toe vs AI</title>
+
+    </head>
+
+    <body>
+
+        <main>
+
+                {% block body %}
+                {% endblock %}
+
+            <table>
+
+                {% block board %}
+                {% endblock %}
+
+            </table>
+
+            <p><a href="/{{ link }}">{{ new }}</a></p>
+
+                {% block description %}
+                {% endblock %}
+
+        </main>
+
+    </body>
+
+</html>

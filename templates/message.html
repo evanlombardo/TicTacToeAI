@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<p>{{ message }}</p>
+
+{% endblock %}
+
+{% block board %}
+
+    <tr>
+
+        <td><button disabled>{{ board[0][0] }}</button></td>
+        <td><button disabled>{{ board[0][1] }}</button></td>
+        <td><button disabled>{{ board[0][2] }}</button></td>
+
+    </tr>
+
+    <tr>
+
+        <td><button disabled>{{ board[1][0] }}</button></td>
+        <td><button disabled>{{ board[1][1] }}</button></td>
+        <td><button disabled>{{ board[1][2] }}</button></td>
+
+    </tr>
+
+    <tr>
+
+        <td><button disabled>{{ board[2][0] }}</button></td>
+        <td><button disabled>{{ board[2][1] }}</button></td>
+        <td><button disabled>{{ board[2][2] }}</button></td>
+
+    </tr>
+
+{% endblock %}
+
+{% block description %}
+
+    <p class="smaller">X is you, O is the AI</p>
+
+{% endblock %}

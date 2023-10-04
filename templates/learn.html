@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <form action="/learn" method="post">
+
+        <p><button {{ start }} class="fit" value="submit" name="start">Start Learning</button></p>
+        <p><button {{ stop }} class="fit" value="submit" name="stop">Stop learning</button></p>
+
+    </form>
+
+{% endblock %}
+
+{% block board %}
+{% endblock %}
+
+{% block description %}
+
+    <p class="smaller">Starts and stops the AI's learning process</p>
+    <p class="smaller">Resetting the AI makes it forget how to play</p>
+
+{% endblock %}
